@@ -14,10 +14,11 @@ const router = new Router({
     {
       path: "/transactions",
       name: "transactions",
-            // route level code-splitting
+      // route level code-splitting
       // this generates a separate chunk (transactions.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "transactions" */"./views/Transactions.vue")
+      component: () =>
+        import(/* webpackChunkName: "transactions" */ "./views/Transactions.vue")
     },
     {
       path: "/modal",

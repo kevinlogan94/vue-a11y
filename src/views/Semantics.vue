@@ -65,7 +65,7 @@ export default {
         // "Spacebar" for IE11 support
         // Prevent the default action to stop scrolling when space is pressed
         event.preventDefault();
-        this.buttonClick(); 
+        this.buttonClick();
       }
     }
   }

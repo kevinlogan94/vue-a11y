@@ -9,7 +9,8 @@ const router = new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: { title: "Web A11y" }
     },
     {
       path: "/transactions",
@@ -18,34 +19,38 @@ const router = new Router({
       // this generates a separate chunk (transactions.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "transactions" */ "./views/Transactions.vue")
+        import(/* webpackChunkName: "transactions" */ "./views/Transactions.vue"),
+      meta: { title: "Transactions Demo" }
     },
     {
       path: "/modal",
       name: "modal",
-      component: () => import("./views/Modal.vue")
+      component: () => import("./views/Modal.vue"),
+      meta: { title: "Modal Demo" }
     },
     {
       path: "/loadingIndicator",
       name: "loadingIndicator",
-      component: () => import("./views/LoadingIndicator.vue")
+      component: () => import("./views/LoadingIndicator.vue"),
+      meta: { title: "Loading Indicator Demo" }
     },
     {
       path: "/image",
       name: "image",
-      component: () => import("./views/Image.vue")
+      component: () => import("./views/Image.vue"),
+      meta: { title: "Image Demo" }
     },
     {
       path: "/semantics",
       name: "semantics",
-      component: () => import("./views/Semantics.vue")
+      component: () => import("./views/Semantics.vue"),
+      meta: { title: "Semantics Demo" }
     }
   ]
 });
-
+// https://github.com/vuejs/vue-router/issues/914
 router.beforeEach((to, from, next) => {
-  // console.log("to", to);
-  // console.log("from", from);
+  document.title = to.meta.title;
   next();
 });
 

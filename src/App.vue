@@ -21,10 +21,10 @@ export default {
   watch: {
     //On route change
     $route() {
-      // wait for the DOM to be loaded then trigger this. 
+      // wait for the DOM to be loaded then trigger this.
       this.$nextTick(function() {
         this.$refs.main.focus();
-      })
+      });
     }
   }
 };

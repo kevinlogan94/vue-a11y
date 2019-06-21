@@ -10,3 +10,22 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount("#app");
+
+$("#skiptomain").click(function() {
+  var skipTo="#"+this.href.split('#')[1];
+  $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+  $(this).removeAttr('tabindex');
+  }).focus();
+  $("html, body").animate({ scrollTop: $('#start').offset().top }, 1000);
+  return false;
+  event.preventDefault();
+  });
+
+  $("#skiptotop").click(function() {
+  $("html, body").animate({ scrollTop: $('#skiptomain').offset().top }, 1000);
+  var skipTo="#"+this.href.split('#')[1];
+  $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+    $(this).removeAttr('tabindex');                                
+  }).focus(); 
+      return false;
+  });

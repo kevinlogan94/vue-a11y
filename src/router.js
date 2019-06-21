@@ -10,7 +10,7 @@ const router = new Router({
       path: "/",
       name: "home",
       component: Home,
-      meta: { title: "Web A11y" }
+      meta: { title: "vue-a11y" }
     },
     {
       path: "/transactions",

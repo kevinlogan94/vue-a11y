@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title is-1">
-            Web A11y
+            vue-a11y
           </h1>
           <h2 class="subtitle">
             Created by Melanie Linares and Kevin Logan

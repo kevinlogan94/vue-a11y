@@ -33,9 +33,12 @@
                 >
                   Submit
                 </button>
-                <span role="alert" class="hide" aria-live="assertive">{{
-                  loadingVerbiage
-                }}</span>
+                <span
+                  role="alert"
+                  class="accessibilityText"
+                  aria-live="assertive"
+                  >{{ loadingVerbiage }}</span
+                >
               </div>
             </div>
           </div>
@@ -67,7 +70,7 @@ export default {
 </script>
 
 <style scoped>
-.hide {
+.accessibilityText {
   /* 
      Have to use opacity: 0; rather than display: none; since role="alert" 
      elements aren't triggered when they are hidden.

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://github.com/kevinlogan94/vue-a11y">
-          <img src="../assets/logo.png" alt="vue-a11y repository" />
+          <img src="../assets/github.png" alt="vue-a11y repository" />
         </a>
         <a
           role="button"

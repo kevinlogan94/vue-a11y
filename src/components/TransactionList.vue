@@ -15,7 +15,7 @@
               <span class="is-pulled-right">{{ transaction.amount }}</span>
             </li>
           </ul>
-          <button v-on:click="loadMore()" class="button is-success">
+          <button v-on:click="loadMore()" class="button is-primary">
             Load More
           </button>
         </div>

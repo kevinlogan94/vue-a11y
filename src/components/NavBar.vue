@@ -10,15 +10,24 @@
           class="navbar-burger burger"
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
+          data-target="navbar"
+          v-on:click="isHamburgerMenuActive = !isHamburgerMenuActive"
+          v-bind:class="{ 'is-active': isHamburgerMenuActive }"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
+      <div
+        id="navbar"
+        class="navbar-menu"
+        v-bind:class="{ 'is-active': isHamburgerMenuActive }"
+      >
+        <div
+          class="navbar-start"
+          v-on:click="isHamburgerMenuActive = !isHamburgerMenuActive"
+        >
           <router-link role="button" class="navbar-item" to="/"
             >Home</router-link
           >
@@ -45,7 +54,12 @@
 
 <script>
 export default {
-  name: "NavBar"
+  name: "NavBar",
+  data() {
+    return {
+      isHamburgerMenuActive: false
+    };
+  }
 };
 </script>
 

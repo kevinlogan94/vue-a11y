@@ -2,9 +2,9 @@
   <div>
     <section class="section">
       <div class="container">
-        <h3 class="title">
+        <h2 class="title is-2">
           Semantic HTML
-        </h3>
+        </h2>
         <button class="button is-primary" v-on:click="buttonClick()">
           Click Me!
         </button>
@@ -12,9 +12,9 @@
     </section>
     <section class="section">
       <div class="container">
-        <h3 class="title">
+        <h2 class="title is-2">
           non-Semantic HTML
-        </h3>
+        </h2>
         <div class="button is-primary" v-on:click="buttonClick()">
           Click Me!
         </div>
@@ -22,9 +22,9 @@
     </section>
     <section class="section">
       <div class="container">
-        <h3 class="title">
+        <h2 class="title is-2">
           non-Semantic HTML with accessibility attributes
-        </h3>
+        </h2>
         <div
           role="button"
           tabindex="0"

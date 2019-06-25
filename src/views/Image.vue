@@ -48,6 +48,18 @@
           </p>
         </figure>
 
+        <figure>
+          <figcaption style="color: red">Don't do this: </figcaption>
+          <p>
+            <b>No Empty ALT attribute:</b><br>
+            <img src="https://www.w3.org/WAI/tutorials/img/topinfo_bg-42052e6c.png"><br>
+          </p>
+          <p>
+            <b>Repetitive ALT:</b><br>
+            <a href="/" style="height: 77px; background-color: white; display: inline-block; padding-right: 1em"><img src="https://www.w3.org/WAI/tutorials/img/crocus-43300466.jpg" style="vertical-align: middle; margin-right: 1em;" alt="Crocus bulbs">Crocus bulbs</a>
+          </p>
+        </figure>        
+
         <small>Source: <a href="https://www.w3.org/WAI/tutorials/images">https://www.w3.org/WAI/tutorials/images</a></small>
 
       </div>

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar has-shadow is-spaced ">
-<a href="#start" id="skiptomain" class="ScreenReader">Skip Navigation</a>
+    <a href="#start" id="skiptomain" class="ScreenReader">Skip Navigation</a>
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -32,15 +32,15 @@
           <router-link role="button" class="navbar-item" to="/loadingIndicator"
             >Loading Indicator</router-link
           >
-          <router-link role="button" class="navbar-item" to="/image"
+          <router-link role="button" class="navbar-item" to="/Image"
             >Image</router-link
           >
           <router-link role="button" class="navbar-item" to="/semantics"
             >Semantics</router-link
           >
-          <router-link role="button" class="navbar-item" to="/skipLinks"
+          <router-link role="button" class="navbar-item" to="/SkipLinks"
             >Skip Links</router-link
-          >
+          >          
         </div>
       </div>
     </div>

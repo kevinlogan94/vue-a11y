@@ -45,6 +45,12 @@ const router = new Router({
       name: "semantics",
       component: () => import("./views/Semantics.vue"),
       meta: { title: "Semantics Demo" }
+    },
+    {
+      path: "/skiplinks",
+      name: "skiplinks",
+      component: () => import("./views/SkipLinks.vue"),
+      meta: { title: "Skip Link Demo" }
     }
   ]
 });

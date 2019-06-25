@@ -15,6 +15,11 @@ import VueA11yDialog from 'vue-a11y-dialog'
  
 Vue.use(VueA11yDialog)
 
+// import Vue from 'vue'
+import VueSkipTo from 'vue-skip-to'
+
+Vue.use(VueSkipTo)
+
 $("#skiptomain").click(function() {
   var skipTo = "#" + this.href.split("#")[1];
   $(skipTo)

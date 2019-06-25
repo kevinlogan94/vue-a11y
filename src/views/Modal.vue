@@ -22,25 +22,25 @@
         <div class="dialog_form_item">
           <label>
             <span class="label_text">Street:</span>
-            <input type="text" class="wide_input">
+            <input type="text" class="input">
           </label>
         </div>
         <div class="dialog_form_item">
           <label>
             <span class="label_text">City:</span>
-            <input type="text" class="city_input">
+            <input type="text" class="input">
           </label>
         </div>
         <div class="dialog_form_item">
           <label>
             <span class="label_text">State:</span>
-            <input type="text" class="state_input">
+            <input type="text" class="input">
           </label>
         </div>
         <div class="dialog_form_item">
           <label>
             <span class="label_text">Zip:</span>
-            <input type="text" class="zip_input">
+            <input type="text" class="input">
           </label>
         </div>
       </div>

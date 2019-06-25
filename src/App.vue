@@ -1,9 +1,12 @@
 <template>
   <div>
+    <span id="BackToTop"></span>
+    <vue-skip-to to="#main" text="Skip to main content" />
     <NavBar />
-    <main tabindex="-1" ref="main">
+    <main tabindex="-1" ref="main" id="main">
       <router-view />
     </main>
+      <vue-skip-to to="#BackToTop" text="Back to top" />
   </div>
 </template>
 
@@ -46,6 +49,8 @@ export default {
   }
 };
 </script>
+
+
 
 
 

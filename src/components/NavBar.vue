@@ -40,7 +40,7 @@
           <router-link role="button" class="navbar-item" to="/loadingIndicator"
             >Loading Indicator</router-link
           >
-          <router-link role="button" class="navbar-item" to="/image"
+          <router-link role="button" class="navbar-item" to="/Image"
             >Image</router-link
           >
           <router-link role="button" class="navbar-item" to="/semantics"

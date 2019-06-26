@@ -36,7 +36,7 @@
           >
           <router-link role="button" class="navbar-item" to="/semantics"
             >Semantics</router-link
-          >         
+          >
         </div>
       </div>
     </div>

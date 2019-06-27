@@ -5,6 +5,7 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 const router = new Router({
+  base: "/vue-a11y/",
   routes: [
     {
       path: "/",

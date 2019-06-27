@@ -32,3 +32,33 @@ export default {
   }
 };
 </script>
+
+<style>
+#app-dialog dialog button {
+  background-color: #23d160;
+  padding: 0em 0.7em;
+  border: none;
+  font-size: 1em;
+  line-height: 2em;
+}
+#app-dialog[aria-hidden^="true"] {
+  background-color: transparent;
+}
+#app-dialog:not([aria-hidden^="true"]) {
+  background-color: #0006;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+#app-dialog dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+</style>

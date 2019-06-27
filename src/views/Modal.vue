@@ -72,3 +72,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.dialog_form {
+  text-align: left;
+}
+</style>

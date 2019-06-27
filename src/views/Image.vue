@@ -128,3 +128,17 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+figure {
+  margin: 2em 0 3em 0 !important;
+  padding: 1em !important;
+  background-color: #e8e8e8;
+}
+figcaption {
+  font-weight: bold;
+  margin-top: -2.25em;
+  margin-left: -1em;
+  margin-bottom: 0.7em;
+}
+</style>

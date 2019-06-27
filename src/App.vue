@@ -1,5 +1,8 @@
 <template>
   <div>
+    <span id="topMessage" class="ScreenReader"
+      >You are back to the top of the page</span
+    >
     <span id="BackToTop"></span>
     <vue-skip-to to="#main" text="Skip to main content" />
     <NavBar />

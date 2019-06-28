@@ -41,10 +41,10 @@ export default {
   font-size: 1em;
   line-height: 2em;
 }
-#app-dialog[aria-hidden^="true"] {
+#app-dialog:not([aria-hidden^="true"]) {
   background-color: transparent;
 }
-#app-dialog:not([aria-hidden^="true"]) {
+#app-dialog[aria-hidden^="true"] {
   background-color: #0006;
   height: 100vh;
   width: 100vw;

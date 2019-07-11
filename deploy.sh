@@ -6,7 +6,7 @@ set -e
 # build
 npm run build
 
-# navigate into the build output directory
+# stage the build output directory
 git add dist/*
 
 # Commit deploy
